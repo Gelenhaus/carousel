@@ -1,22 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
+import occipital from '../src/assets/occipital/occipital.png';
+import frontal from '../src/assets/frontal/frontal.jpg'
+import EasyCarousal from 'carousal-hub';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <EasyCarousal hint='What are you' boldHint='here to do?'>
+          <div className="items full-width text-center">
+            <h1 className="product">
+              <img src={occipital}></img>
+            </h1>
+          </div>
+
+          <div className="items full-width text-center">
+            <h1 className="product">
+              <img src={frontal}></img> 2</h1>
+          </div>
+
+          <div className="items full-width text-center">
+            <h1 className="product">3</h1>
+          </div>
+
+          <div className="items full-width text-center">
+            <h1 className="product">Temporal</h1>
+          </div>
+
+          <div className="items full-width text-center">
+            <h1 className="product">5</h1>
+          </div>
+        </EasyCarousal>
+
       </header>
     </div>
   );
