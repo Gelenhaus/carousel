@@ -41,3 +41,10 @@ img {
   height: 100%;
   width: 100%;
 }
+
+div {
+  background-color: rgb(177, 241, 241);
+}
+h1 {
+  background-color: rgb(179, 193, 138);
+}
