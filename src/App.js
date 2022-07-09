@@ -6,10 +6,27 @@ import temporal from '../src/assets/temporal/temporal.jpg'
 import EasyCarousal from 'carousal-hub';
 import cerebellum from '../src/assets/cerebellum/cerebellum.jpg';
 import spinalcord from '../src/assets/spinalcord/spinalcord.jpg';
+import React from 'react'
+import Carousel from 'better-react-carousel'
 
 function App() {
   return (
     <div className="App">
+      <Carousel cols={2} rows={1} gap={10} loop>
+        <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=1" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=2" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" src="https://picsum.photos/800/600?random=3" />
+        </Carousel.Item>
+        <Carousel.Item>
+          {/* anything you want to show in the grid */}
+        </Carousel.Item>
+        {/* ... */}
+      </Carousel>
       <header className="App-header">
         <EasyCarousal hint='What are you' boldHint='here to do?'>
           <div className="items full-width text-center">
@@ -48,6 +65,7 @@ function App() {
         </EasyCarousal>
 
       </header>
+
     </div>
   );
 }
